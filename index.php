@@ -20,6 +20,18 @@
     
     $title = "Pocetna";
     
+    
+    require_once SITE_ROOT.'protected/class/Korisnik.php';
+    
+    
+    $korisnik = NEW Korisnik();
+    
+    
+    
+    
+   
+    
+    
     if($strana!=NULL){
         $str_path = SITE_ROOT.'protected/controller/'.$strana.'.php';
         if(file_exists($str_path)){
@@ -37,6 +49,8 @@
     <head>
 
         <title><?php echo $title; ?></title>
+        
+        <link rel="stylesheet" href="<?php echo SITE_URL; ?>css/default.css">
 
     </head>
 
